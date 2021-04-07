@@ -351,7 +351,7 @@ play6 = document.querySelector('#play6');
 
 play1.addEventListener('click', () => {
 if(audio1.paused){
-  play2.innerHTML = '<i class="fas fa-pause"></i>'
+  play1.innerHTML = '<i class="fas fa-pause"></i>'
   audio1.play(); 
   audio2.pause();
   audio3.pause();
