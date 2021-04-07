@@ -280,6 +280,8 @@ homeclose.forEach(button => button.addEventListener('click', function() {
 document.querySelector('.smalllid').style.display="none";
 document.querySelector('.otherscreen').style.display="none";
 document.querySelector('.topicon').style.display="inline-flex";
+    audiolist.pause();
+  audiolist.currentTime = 0;
 }));
 
 //exit the screen when user clicks on the exit button from the modal container
@@ -303,6 +305,8 @@ for(i=0; i<x.length; i++){
   x[i].style.display="none";
   document.querySelector('.otherscreen').style.display="none";
   document.querySelector('.smalllid').style.display="none";
+    audiolist.pause();
+  audiolist.currentTime = 0;
   document.querySelector('.topicon').style.display="inline-flex";
 }
 }));
