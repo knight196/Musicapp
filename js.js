@@ -307,6 +307,8 @@ for(i=0; i<x.length; i++){
   document.querySelector('.smalllid').style.display="none";
     audiolist.pause();
   audiolist.currentTime = 0;
+    pic2.style.animation="linear";
+  audioplayer.innerHTML = "<i class='fas fa-play'></i>";
   document.querySelector('.topicon').style.display="inline-flex";
 }
 }));
