@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile music</title>
+</head>
+<body>
+
+   <h1 class="headerh1">Music Player App</h1>
+<!--background screen-->
+    <header class="header">
+
+        <div class="topicon">
+            <div class="iconflex">
+               <p>10:20</p>
+               <p><i class="fas fa-headset"></i></p>
+               <p><i class="fas fa-gamepad"></i></p>
+            </div>
+
+            <div class="cameraicon"></div>
+        
+            <div class="iconflex"> 
+                <p><i class="fab fa-bluetooth"></i></p>
+                <p><i class="fas fa-signal"></i></p>
+                <p><i class="fas fa-wifi"></i></p>
+             <p>100%<i class="fas fa-battery-full"></i></p>
+            
+
+             
+            </div>
+        </div>
+
+<div class="bottommenu">
+                <button><i class="fas fa-bars"></i></button>
+                <button><i class="fas fa-square"></i></button>
+                <button><i class="fas fa-angle-left"></i></button>
+            </div>
+
+        <div class="musicicon">
+            <i class="fas fa-music"></i>
+            <br>
+            <small>Music Player</small>
+        </div>
+
+        <!--First Screen of musicplayer-->
+        <div class="smalllid">
+
+<div class="topicon">
+    <div class="iconflex">
+       <p>10:20</p>
+       <p><i class="fas fa-headset"></i></p>
+       <p><i class="fas fa-gamepad"></i></p>
+    </div>
+
+    <div class="iconflex"> 
+        <p><i class="fab fa-bluetooth"></i></p>
+        <p><i class="fas fa-signal"></i></p>
+        <p><i class="fas fa-wifi"></i></p>
+     <p>100%<i class="fas fa-battery-full"></i></p>
+    
+    </div>
+</div>
+
+            <div class="menubutton">
+                <button class="down menubtn1"><i class="fas fa-chevron-down"></i></button>
+                <button class="song">Song</button>
+                <button id="openNav" class="menubtn1"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+
+                <div class="navbar">
+                  <div class="playlist">
+                      <i class="fas fa-broadcast-tower"></i>
+                      <p>Radio</p>
+                  </div>
+                  <div class="playlist" style="opacity:1;">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <p>PlayNext</p>
+                </div>
+                <div class="playlist">
+                    <i class="fas fa-plus"></i>
+                    <p>Add to library</p>
+                </div>
+                <div class="playlist">
+                    <i class="fas fa-compact-disc"></i>
+                    <p>Go to album</p>
+                </div>
+                <div class="playlist">
+                    <i class="fas fa-share"></i>
+                    <p>Share</p>
+                </div>
+                <div class="playlist">
+                    <i class="fas fa-flag"></i>
+                    <p>Report</p>
+                </div>
+            </div>
+
+          
+
+            <div class="music">
+
+                <div class="backgroundimg">
+                    <img src="" class="img2">
+                </div>
+
+                <div class="spinner">
+                    <img src="" class="pic2">
+                </div>
+                
+                <audio src='' id="audiolist"></audio>
+
+            </div>
+
+            <div class="progress">
+
+            <div class="songset">
+                <h1 id="songname"></h1>
+            </div>
+
+            <progress id="progress" value="0"></progress>
+    
+    <br>
+
+    <div class="timer">
+        <div></div>
+        <span aria-label="timer">00:00</span>
+      </div>
+
+      <input class="slider" id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+      <span>Adjust your volume</span>
+            </div>
+          
+
+            <div class="musicbuttons">
+                <button class="prev btn2"><i class="fas fa-step-backward"></i></button>
+                <button class="audioplay"><i class="fas fa-play"></i></button>
+                <button class="stop btn2"><i class="fas fa-stop"></i></button>
+                <button class="next btn2"><i class="fas fa-step-forward"></i></button>
+            </div>  
+
+            <div class="exitbox">
+                <p>Do you want to exit</p>
+
+                <button class="yes">Yes</button>
+                <button class="No">No</button>
+            </div>
+            
+        
+            <div class="buttons">
+                <button class="closemusic"><i class="fas fa-bars"></i></button>
+                <button id="home"><i class="fas fa-square"></i></button>
+                <button class="exit"><i class="fas fa-angle-left"></i></button>
+            </div>
+
+        </div>
+
+        <!--End of First Screen Music player-->
+
+
+        <!--Second Screen of music list Starts here-->
+
+        <div class="otherscreen">
+
+    <div class="topicon">
+        <div class="iconflex">
+           <p>10:20</p>
+           <p><i class="fas fa-headset"></i></p>
+           <p><i class="fas fa-gamepad"></i></p>
+        </div>
+    
+        <div class="iconflex"> 
+            <p><i class="fab fa-bluetooth"></i></p>
+            <p><i class="fas fa-signal"></i></p>
+            <p><i class="fas fa-wifi"></i></p>
+         <p>100%<i class="fas fa-battery-full"></i></p>
+        
+        </div>
+    </div>
+
+            <div class="topmusiclogo">
+                <i class="fas fa-play"></i>
+            <small>Music</small>
+            </div>
+    
+            <div class="musictitle">
+                    <img src="./images/relaxpianopic.jpg">
+                   <div class="logotitle">
+                       <small>More From</small>
+                       <br>
+                       <small>relaxdaily</small>
+                   </div>
+            </div>
+    
+            <div class="secondlid">
+    
+                <div>
+                    <p>Tobu</p>
+                    <img src="./images/eveninggrass.jpg">
+                    <button id="play1" class="play"><i class="fas fa-play"></i></button>
+                    <audio id="audio1" src="./Audio/Cool by tobu.mp3"></audio>
+                </div>
+
+                <div>
+                    <p>kiss the rain</p>
+                    <img src="./images/grass.jpg">
+                    <button id="play2" class="play"><i class="fas fa-play"></i></button>
+                    <audio id="audio2" src="./Audio/kiss the rain.mp3"></audio>
+                </div>
+
+                <div>
+                    <p>Summer</p>
+                    <img src="./images/grass2.jpg">
+                    <button id="play3" class="play"><i class="fas fa-play"></i></button>
+                    <audio id="audio3"  src="./Audio/Joe Hisaishi - Summer.mp3"></audio>
+                </div>
+
+                <div>
+                    <p>An-avenue</p>
+                    <img src="./images/plainland.jpg">
+                    <button id="play4" class="play"><i class="fas fa-play"></i></button>
+                    <audio id="audio4"  src="./Audio/an-avenue.mp3"></audio>
+                </div>
+
+                <div>
+                    <p>relax piano</p>
+                    <img src="./images/sakura.jpg">
+                    <button id="play5" class="play"><i class="fas fa-play"></i></button>
+                    <audio id="audio5"  src="./Audio/relax-paino.mp3"></audio>
+                </div>
+
+                <div>
+                    <p>Maybe</p>
+                    <img src="./images/oceans.jpg">
+                    <button id="play6" class="play"><i class="fas fa-play"></i></button>
+                    <audio id="audio6"  src="./Audio/Yiruma - Maybe.mp3"></audio>
+                </div>
+
+                
+               </div>
+
+
+               <div class="exitbox">
+                <p>Do you want to exit</p>
+
+                <button class="yes">Yes</button>
+                <button class="No">No</button>
+            </div>
+ 
+            <div class="bottomplay">
+      
+                <div class="bottomcontainer">
+                <div>
+                    <img src="" class="bottomplayimg">
+                </div>
+ 
+                <div class="bottomsongname">
+                    <p id="bottomsong"></p>
+                </div>
+
+                </div>
+        
+              
+                <div>
+                  <span id="thirdplay"><i  class="fas fa-play"></i></span>
+                </div>
+ 
+                <div>
+                   <span id="thirdnext"><i  class="fas fa-step-forward"></i></span>
+                </div>
+            </div>
+    
+    
+           <div class="buttons">
+            <button class="closemusic"><i class="fas fa-bars"></i></button>
+            <button id="home"><i class="fas fa-square"></i></button>
+            <button class="exit"><i class="fas fa-angle-left"></i></button>
+        </div>
+    
+           </div>
+
+
+           <!--End of Second Screen-->
+
+
+    </header>
+
+    
+    <!--End of the background screen-->
+</body>
+</html>
