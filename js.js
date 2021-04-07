@@ -271,6 +271,10 @@ home.forEach(button => button.addEventListener('click', () => {
   document.querySelector('.smalllid').style.display="none";
   document.querySelector('.otherscreen').style.display="none";
   document.querySelector('.topicon').style.display="inline-flex";
+    pic2.style.animation="linear";
+  audioplayer.innerHTML = "<i class='fas fa-play'></i>";
+  audiolist.pause();
+audiolist.currentTime = 0;
 }));
 
 //square button for exiting from the music player which takes the user to the home screen
@@ -282,6 +286,8 @@ document.querySelector('.otherscreen').style.display="none";
 document.querySelector('.topicon').style.display="inline-flex";
     audiolist.pause();
   audiolist.currentTime = 0;
+    pic2.style.animation="linear";
+  audioplayer.innerHTML = "<i class='fas fa-play'></i>";
 }));
 
 //exit the screen when user clicks on the exit button from the modal container
