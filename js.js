@@ -380,6 +380,8 @@ function loadSong(songlist) {
     audiolist.src = "Audio/"+songlist.name;
     img2.src = "images/"+songlist.clipArt;
     pic2.src = "images/"+songlist.clipArt;
+   bottomimg.src = "images/" + songlist.clipArt;
+    bottomsong.textContent = songlist.musicName;
 }
 
 
