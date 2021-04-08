@@ -364,12 +364,10 @@ bottomplay.style.animation="grow ease 1.5s";
 
 
   var thumbsup = document.querySelector('.fa-thumbs-up');
+  var thumbsup2 = document.querySelector('.fa-thumbs-up');
 
   thumbsup.addEventListener('click', () => {
-    if(thumbsup.innerHTML === '<i class="fas fa-thumbs-up"></i>'){
-    }else{
-      thumbsup.style.color="blue";
-    }
+ thumbsup2.classList.toggle('show');
   });
 
 
