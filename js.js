@@ -404,6 +404,7 @@ for (let i = 0; i < musicList.length; i++) {
         pic2.style.animation ="spin 4s linear infinite";
        audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
        songname.style.animation = "scroll-left 15s linear infinite";
+       thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
        audiolist.play();
     })
     
