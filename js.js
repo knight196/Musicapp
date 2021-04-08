@@ -286,6 +286,7 @@ var musicicon = document.querySelector('.fa-music');
 
 musicicon.addEventListener('click', () => {
 document.querySelector('.smalllid').style.display="block";
+  document.querySelector('.smalllid').style.animation ="grow 1s ease";
 document.querySelector('.topicon').style.display="none";
 });
 
