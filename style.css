@@ -574,6 +574,9 @@ right:2px;
   top:10px;
   color:white;
 }
+.fa-thumbs-up.show{
+  color:blue;
+}
 .musics-ul{
   display:grid;
   grid-template-columns: auto auto auto;
