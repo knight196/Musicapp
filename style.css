@@ -591,3 +591,9 @@ right:2px;
 .musics-ul li{
   padding:10px 5px;
 }
+
+.musics-ul li img:hover {
+  background:grey;
+  opacity:0.5;
+}
+
