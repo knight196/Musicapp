@@ -273,6 +273,7 @@ down.addEventListener('click', () => {
 bottomplay.classList.add('show');
 document.querySelector('.smalllid').style.display="none";
 document.querySelector('.otherscreen').style.display="block";
+  document.querySelector('.otherscreen').style.animation ="grow 1s ease";
 });
 
 
@@ -369,6 +370,7 @@ bottomplay.style.animation="grow ease 1.5s";
 
   thumbsup.addEventListener('click', () => {
  thumbsup2.classList.toggle('show');
+      thumbsup2.style.transition="all .5s";
   });
 
 
