@@ -159,6 +159,19 @@ thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
 audiolist.play();
   });
   
+//nextsong will be played automatically once previous song is over
+loadSong(songlist[count]);
+audiolist.addEventListener('ended', nextSong)
+
+function nextSong(){
+  count++;
+  if(count > songlist.length -1){
+    count = 0;
+  }
+  loadSong(songlist[count]);
+  audiolist.play();
+}
+
 //play button for the main screen
 audioplayer.addEventListener('click', () => {
   if(audioplayer.innerHTML === '<i class="fas fa-pause"></i>'){
