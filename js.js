@@ -235,6 +235,17 @@ timer.textContent = mediaTime;
 
 });
 
+//User can skip the length of the song by clicking on the progressbar
+progress.addEventListener('click', setProgress)
+
+function setProgress(e){
+const width = this.clientWidth;
+const clickX = e.offsetX;
+const duration = audiolist.duration;
+
+audiolist.currentTime = (clickX / width) * duration;
+}
+
 volumeslider.addEventListener('change', function(e) {;
 audiolist.volume = e.currentTarget.value / 100;
 });
