@@ -14,6 +14,8 @@ var pic2 = document.querySelector('.pic2');
 
 var stop = document.querySelector('.stop');
 
+var smalllid = document.querySelector('.smalllid');
+
 //Music file lists
 
 var progress = document.querySelector('#progress');
@@ -31,7 +33,7 @@ var songlist = [
     title:'Tobu',
     clipArt:'eveninggrass.jpg',
     images:'./images/eveninggrass.jpg',
-     background:'hsl(240, 100%, 75%)'
+     background:'hsl(165, 100%, 35%)'
   },
 
   Music2 ={
@@ -42,7 +44,7 @@ var songlist = [
     title:'kiss the rain',
     clipArt:'grass.jpg',
     images:'./images/grass.jpg',
-    background:'hsl(30, 100%, 80%)'
+    background:'#00e6ac'
   },
   Music3 ={
     musicFile: 'Audio/Joe Hisaishi - Summer.mp3',
@@ -52,7 +54,7 @@ var songlist = [
     title:'Summer',
     clipArt:'grass2.jpg',
     images:'./images/grass2.jpg',
-       background:'hsl(120, 100%, 75%)'
+       background:'#999900'
   },
 
   Music4 ={
@@ -63,7 +65,7 @@ var songlist = [
     title:'relax-piano',
     clipArt:'sakura.jpg',
     images:'./images/sakura.jpg',
-        background:'lightcoral'
+        background:'hsl(195, 100%, 25%)'
   },
   Music5 ={
     musicFile: 'Audio/Yiruma - Maybe.mp3',
@@ -73,7 +75,7 @@ var songlist = [
     title:'Maybe',
     clipArt:'oceans.jpg',
     images:'./images/oceans.jpg',
-      background:'hsl(120, 100%, 75%)'
+      background:'#00e699'
   },
 
   Music6 ={
@@ -84,7 +86,7 @@ var songlist = [
     title:'An-Avenue',
     clipArt:'plainland.jpg',
     images:'./images/plainland.jpg',
-      background:'hsl(195, 100%, 40%)'
+      background:'#9999ff'
   }
 ]
 
@@ -107,6 +109,7 @@ img2.src=songlist[count].musicPic;
 
 bottomimg.src=songlist[count].musicPic;
 bottomsong.innerText = songlist[count].musicName;
+smalllid.style.backgroundColor = songlist[count].background;
 
 
 
@@ -124,9 +127,9 @@ pic2.src=songlist[count].musicPic;
 img2.src=songlist[count].musicPic;
 pic2.style.animation="spin 4s linear infinite";
 songname.style.animation = "scroll-left 15s linear infinite";
+  smalllid.style.backgroundColor = songlist[count].background;
+smalllid.style.transition = "all 2s";
 audiolist.play();
-  document.body.style.backgroundColor = songlist[count].background;
-  document.body.style.transition = "all 2s";
 thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
 });
 
@@ -142,8 +145,8 @@ thirdplay.addEventListener('click', () => {
     thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
     audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
     audiolist.play();
-     document.body.style.backgroundColor = songlist[count].background;
-  document.body.style.transition = "all 2s";
+   smalllid.style.backgroundColor = songlist[count].background;
+smalllid.style.transition = "all 2s";
     pic2.style.animation ="spin 4s linear infinite";
     songname.style.animation = "scroll-left 15s linear infinite";
   }
@@ -164,8 +167,8 @@ pic2.style.animation="spin 4s linear infinite";
 songname.style.animation = "scroll-left 15s linear infinite";
 audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
 bottomimg.src=songlist[count].musicPic;
-   document.body.style.backgroundColor = songlist[count].background;
-  document.body.style.transition = "all 2s";
+smalllid.style.backgroundColor = songlist[count].background;
+smalllid.style.transition = "all 2s";
 bottomsong.innerText = songlist[count].musicName;
 thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
 audiolist.play();
@@ -194,8 +197,8 @@ audioplayer.addEventListener('click', () => {
   }else if (audioplayer.innerHTML === '<i class="fas fa-play"></i>'){
     audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
     audiolist.play();
-     document.body.style.backgroundColor = songlist[count].background;
-  document.body.style.transition = "all 2s";
+smalllid.style.backgroundColor = songlist[count].background;
+smalllid.style.transition = "all 2s";
     thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
     pic2.style.animation ="spin 4s linear infinite";
     songname.style.animation = "scroll-left 15s linear infinite";
@@ -215,8 +218,8 @@ audiolist.src = songlist[count].musicFile;
 songname.innerText = songlist[count].musicName;
 pic2.src=songlist[count].musicPic;
 img2.src=songlist[count].musicPic;
-   document.body.style.backgroundColor = songlist[count].background;
-  document.body.style.transition = "all 2s";
+smalllid.style.backgroundColor = songlist[count].background;
+smalllid.style.transition = "all 2s";
 pic2.style.animation="spin 4s linear infinite";
 songname.style.animation = "scroll-left 15s linear infinite";
 audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
@@ -233,8 +236,8 @@ audiolist.src = songlist[count].musicFile;
 songname.innerText = songlist[count].musicName;
 pic2.src=songlist[count].musicPic;
 img2.src=songlist[count].musicPic;
-   document.body.style.backgroundColor = songlist[count].background;
-  document.body.style.transition = "all 2s";
+smalllid.style.backgroundColor = songlist[count].background;
+smalllid.style.transition = "all 2s";
 pic2.style.animation="spin 4s linear infinite";
 songname.style.animation = "scroll-left 15s linear infinite";
 audiolist.play();
@@ -427,6 +430,7 @@ function loadSong(songlist) {
     pic2.src = "images/"+songlist.clipArt;
    bottomimg.src = "images/" + songlist.clipArt;
     bottomsong.textContent = songlist.musicName;
+  smalllid.style.backgroundColor = songlist.background;
 }
 
 
@@ -450,6 +454,7 @@ for (let i = 0; i < musicList.length; i++) {
        audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
        songname.style.animation = "scroll-left 15s linear infinite";
        thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
+      smalllid.style.backgroundColor = songlist.background;
        audiolist.play();
     })
     
