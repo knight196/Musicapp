@@ -30,7 +30,8 @@ var songlist = [
     name:'Cool by tobu.mp3',
     title:'Tobu',
     clipArt:'eveninggrass.jpg',
-    images:'./images/eveninggrass.jpg'
+    images:'./images/eveninggrass.jpg',
+     background:'hsl(240, 100%, 75%)'
   },
 
   Music2 ={
@@ -40,7 +41,8 @@ var songlist = [
     name:'kiss the rain.mp3',
     title:'kiss the rain',
     clipArt:'grass.jpg',
-    images:'./images/grass.jpg'
+    images:'./images/grass.jpg',
+    background:'hsl(30, 100%, 80%)'
   },
   Music3 ={
     musicFile: 'Audio/Joe Hisaishi - Summer.mp3',
@@ -49,7 +51,8 @@ var songlist = [
     name:'Joe Hisaishi - Summer.mp3',
     title:'Summer',
     clipArt:'grass2.jpg',
-    images:'./images/grass2.jpg'
+    images:'./images/grass2.jpg',
+       background:'hsl(120, 100%, 75%)'
   },
 
   Music4 ={
@@ -59,7 +62,8 @@ var songlist = [
     name:'relax-paino.mp3',
     title:'relax-piano',
     clipArt:'sakura.jpg',
-    images:'./images/sakura.jpg'
+    images:'./images/sakura.jpg',
+        background:'hsl(150, 100%, 60%)'
   },
   Music5 ={
     musicFile: 'Audio/Yiruma - Maybe.mp3',
@@ -68,7 +72,8 @@ var songlist = [
     name:'Yiruma - Maybe.mp3',
     title:'Maybe',
     clipArt:'oceans.jpg',
-    images:'./images/oceans.jpg'
+    images:'./images/oceans.jpg',
+      background:'hsl(120, 100%, 75%)'
   },
 
   Music6 ={
@@ -78,7 +83,8 @@ var songlist = [
     name:'an-avenue.mp3',
     title:'An-Avenue',
     clipArt:'plainland.jpg',
-    images:'./images/plainland.jpg'
+    images:'./images/plainland.jpg',
+      background:'hsl(195, 100%, 40%)'
   }
 ]
 
@@ -119,6 +125,8 @@ img2.src=songlist[count].musicPic;
 pic2.style.animation="spin 4s linear infinite";
 songname.style.animation = "scroll-left 15s linear infinite";
 audiolist.play();
+  document.body.style.backgroundColor = songlist[count].background;
+  document.body.style.transition = "all 2s";
 thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
 });
 
@@ -134,6 +142,8 @@ thirdplay.addEventListener('click', () => {
     thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
     audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
     audiolist.play();
+     document.body.style.backgroundColor = songlist[count].background;
+  document.body.style.transition = "all 2s";
     pic2.style.animation ="spin 4s linear infinite";
     songname.style.animation = "scroll-left 15s linear infinite";
   }
@@ -154,6 +164,8 @@ pic2.style.animation="spin 4s linear infinite";
 songname.style.animation = "scroll-left 15s linear infinite";
 audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
 bottomimg.src=songlist[count].musicPic;
+   document.body.style.backgroundColor = songlist[count].background;
+  document.body.style.transition = "all 2s";
 bottomsong.innerText = songlist[count].musicName;
 thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
 audiolist.play();
@@ -182,6 +194,8 @@ audioplayer.addEventListener('click', () => {
   }else if (audioplayer.innerHTML === '<i class="fas fa-play"></i>'){
     audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
     audiolist.play();
+     document.body.style.backgroundColor = songlist[count].background;
+  document.body.style.transition = "all 2s";
     thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
     pic2.style.animation ="spin 4s linear infinite";
     songname.style.animation = "scroll-left 15s linear infinite";
@@ -201,6 +215,8 @@ audiolist.src = songlist[count].musicFile;
 songname.innerText = songlist[count].musicName;
 pic2.src=songlist[count].musicPic;
 img2.src=songlist[count].musicPic;
+   document.body.style.backgroundColor = songlist[count].background;
+  document.body.style.transition = "all 2s";
 pic2.style.animation="spin 4s linear infinite";
 songname.style.animation = "scroll-left 15s linear infinite";
 audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
@@ -217,6 +233,8 @@ audiolist.src = songlist[count].musicFile;
 songname.innerText = songlist[count].musicName;
 pic2.src=songlist[count].musicPic;
 img2.src=songlist[count].musicPic;
+   document.body.style.backgroundColor = songlist[count].background;
+  document.body.style.transition = "all 2s";
 pic2.style.animation="spin 4s linear infinite";
 songname.style.animation = "scroll-left 15s linear infinite";
 audiolist.play();
