@@ -63,7 +63,7 @@ var songlist = [
     title:'relax-piano',
     clipArt:'sakura.jpg',
     images:'./images/sakura.jpg',
-        background:'hsl(150, 100%, 60%)'
+        background:'lightcoral'
   },
   Music5 ={
     musicFile: 'Audio/Yiruma - Maybe.mp3',
