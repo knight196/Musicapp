@@ -33,7 +33,7 @@ var songlist = [
     title:'Tobu',
     clipArt:'eveninggrass.jpg',
     images:'./images/eveninggrass.jpg',
-     background:'hsl(165, 100%, 35%)'
+     background:'darkgrey'
   },
 
   Music2 ={
@@ -44,7 +44,7 @@ var songlist = [
     title:'kiss the rain',
     clipArt:'grass.jpg',
     images:'./images/grass.jpg',
-    background:'#00e6ac'
+    background:'#619E8D'
   },
   Music3 ={
     musicFile: 'Audio/Joe Hisaishi - Summer.mp3',
@@ -54,7 +54,7 @@ var songlist = [
     title:'Summer',
     clipArt:'grass2.jpg',
     images:'./images/grass2.jpg',
-       background:'#999900'
+       background:'#6897BB'
   },
 
   Music4 ={
@@ -65,7 +65,7 @@ var songlist = [
     title:'relax-piano',
     clipArt:'sakura.jpg',
     images:'./images/sakura.jpg',
-        background:'hsl(195, 100%, 25%)'
+        background:'#0086BF'
   },
   Music5 ={
     musicFile: 'Audio/Yiruma - Maybe.mp3',
@@ -75,7 +75,7 @@ var songlist = [
     title:'Maybe',
     clipArt:'oceans.jpg',
     images:'./images/oceans.jpg',
-      background:'#00e699'
+      background:'#6f904a'
   },
 
   Music6 ={
@@ -86,7 +86,7 @@ var songlist = [
     title:'An-Avenue',
     clipArt:'plainland.jpg',
     images:'./images/plainland.jpg',
-      background:'#9999ff'
+      background:'#8FBC8F'
   }
 ]
 
