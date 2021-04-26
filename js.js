@@ -87,6 +87,58 @@ var songlist = [
     clipArt:'plainland.jpg',
     images:'./images/plainland.jpg',
       background:'#8FBC8F'
+  },
+  Music7 ={
+    musicFile: 'Audio/RiverFlows.mp3',
+    musicName: 'Yiruma - RiverFlows',
+    musicPic:'images/river.jpg',
+    name:'RiverFlows.mp3',
+    title:'RiverFlows',
+    clipArt:'river.jpg',
+    images:'./images/river.jpg',
+      background:'#6f904a'
+  },
+
+  Music8 ={
+    musicFile : 'Audio/Raisemeup.mp3',
+    musicName: 'Raise Me up',
+    musicPic:'images/lonely.jpg',
+    name:'Raisemeup.mp3',
+    title:'Raise Me up',
+    clipArt:'lonely.jpg',
+    images:'./images/lonely.jpg',
+      background:'#8FBC8F'
+  },
+  Music9 ={
+    musicFile: 'Audio/Here with you.mp3',
+    musicName: 'Mirai Nikki Here with you',
+    musicPic:'images/street.jpg',
+    name:'Here with you.mp3',
+    title:'Here with you',
+    clipArt:'street.jpg',
+    images:'./images/street.jpg',
+      background:'#6f904a'
+  },
+
+  Music10 ={
+    musicFile : 'Audio/Canon in D.mp3',
+    musicName: 'Canon in D',
+    musicPic:'images/road.jpg',
+    name:'Canon in D.mp3',
+    title:'Canon in D',
+    clipArt:'road.jpg',
+    images:'./images/road.jpg',
+      background:'#8FBC8F'
+  },
+  Music11 ={
+    musicFile : 'Audio/Katawaredoki.mp3',
+    musicName: 'Katawaredoki Kimi no na wa',
+    musicPic:'images/moonstrike.jpg',
+    name:'Katawaredoki.mp3',
+    title:'Katawaredoki',
+    clipArt:'moonstrike.jpg',
+    images:'./images/moonstrike.jpg',
+      background:'#8FBC8F'
   }
 ]
 
@@ -239,6 +291,7 @@ img2.src=songlist[count].musicPic;
 smalllid.style.backgroundColor = songlist[count].background;
 smalllid.style.transition = "all 2s";
 pic2.style.animation="spin 4s linear infinite";
+  audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
 songname.style.animation = "scroll-left 15s linear infinite";
 audiolist.play();
   });
