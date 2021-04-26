@@ -117,7 +117,7 @@ var songlist = [
     title:'Here with you',
     clipArt:'street.jpg',
     images:'./images/street.jpg',
-      background:'#6f904a'
+      background:'#darkgrey'
   },
 
   Music10 ={
@@ -128,7 +128,7 @@ var songlist = [
     title:'Canon in D',
     clipArt:'road.jpg',
     images:'./images/road.jpg',
-      background:'#8FBC8F'
+      background:'darkcyan'
   },
   Music11 ={
     musicFile : 'Audio/Katawaredoki.mp3',
