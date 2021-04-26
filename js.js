@@ -290,6 +290,7 @@ pic2.src=songlist[count].musicPic;
 img2.src=songlist[count].musicPic;
 smalllid.style.backgroundColor = songlist[count].background;
 smalllid.style.transition = "all 2s";
+  bottomsong.innerText = songlist[count].musicName;
 pic2.style.animation="spin 4s linear infinite";
 audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
 songname.style.animation = "scroll-left 15s linear infinite";
