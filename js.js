@@ -423,7 +423,7 @@ exit.forEach(button => button.addEventListener('click', function() {
 var x,i;
 x=document.querySelectorAll('.exitbox');
 for(i=0; i<x.length; i++){
-  x[i].style.display="block";
+  x[i].classList.add('showexit');
 }
 }));
 
@@ -434,7 +434,7 @@ yes.forEach(button => button.addEventListener('click', function() {
 var x,i;
 x=document.querySelectorAll('.exitbox');
 for(i=0; i<x.length; i++){
-  x[i].style.display="none";
+ x[i].classList.remove('showexit');
   document.querySelector('.otherscreen').style.display="none";
   document.querySelector('.smalllid').style.display="none";
   document.querySelector('.topicon').style.display="inline-flex";
@@ -452,7 +452,7 @@ no.forEach(button => button.addEventListener('click', function () {
   var x,i;
   x=document.querySelectorAll('.exitbox');
   for(i=0; i<x.length; i++){
-    x[i].style.display="none";
+     x[i].classList.remove('showexit');
   }
 }));
 
