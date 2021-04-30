@@ -494,7 +494,7 @@ function loadSong(songlist) {
 let musicList = document.querySelector('.musics-ul').children;   
 let li = document.querySelectorAll('li');
 
-for (let i = 0; i < musicList.length; i++) {
+for (let i = 0; i < songlist.length; i++) {
 
     musicList[i].textContent = songlist[i].title;
     musicList[i].setAttribute('id',i);
