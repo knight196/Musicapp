@@ -630,6 +630,7 @@ width:100%;
 .listcollection p{
   display:flex;
   justify-content: space-between;
+align-items: center;
 }
 .listshow{
   display:block;
