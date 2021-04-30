@@ -152,6 +152,8 @@ var thirdnext = document.querySelector('#thirdnext');
 
 var thirdplay = document.querySelector('#thirdplay');
 
+var minisong = document.querySelector('.minisong');
+
 let count = 0;
 
 audiolist.src = songlist[count].musicFile;
@@ -480,6 +482,7 @@ bottomplay.style.animation="grow ease 1.5s";
 
 function loadSong(songlist) {
     songname.textContent = songlist.musicName;
+   minisong.textContent = songlist.musicName;
     audiolist.src = "Audio/"+songlist.name;
     img2.src = "images/"+songlist.clipArt;
     pic2.src = "images/"+songlist.clipArt;
@@ -513,4 +516,46 @@ for (let i = 0; i < songlist.length; i++) {
        audiolist.play();
     })
     
+}
+
+let musicList2 = document.querySelector('.listcollection').children;   
+let li2 = document.querySelectorAll('p');
+
+for (let i = 0; i < musicList2.length; i++) {
+
+    musicList2[i].textContent = songlist[i].musicName;
+    musicList2[i].setAttribute('id',i);
+
+    const icon = document.createElement('SPAN');
+
+    var txt = document.createTextNode('');
+
+    icon.className = "star";
+
+    icon.appendChild(txt);
+
+    musicList2[i].appendChild(icon);
+
+    musicList2[i].addEventListener('click', function(){
+        loadSong(songlist[this.id]);
+        pic2.style.animation ="spin 4s linear infinite";
+       audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
+       songname.style.animation = "scroll-left 15s linear infinite";
+       thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
+      smalllid.style.backgroundColor = songlist.background;
+       audiolist.play();
+    })
+    
+}
+
+function grip(){
+  document.querySelector('.buttons2').classList.toggle('height');
+  document.querySelector('.listcollection').classList.toggle('listshow');
+  document.querySelector('.backgroundimg').classList.toggle('imgsize');
+  document.querySelector('.spinner').classList.toggle('spinnershow');
+  document.querySelector('.minisong').classList.toggle('minisongshow');
+
+  document.querySelector('.buttons2').style.transition ="1s all";
+  document.querySelector('.minisong').style.transition ="1s all";
+  document.querySelector('.backgroundimg').style.transition ="1s all";
 }
