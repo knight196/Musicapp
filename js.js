@@ -366,6 +366,7 @@ var music = document.querySelector('.music');
 
 nav.addEventListener('click', () => {
 navbar.classList.toggle('show');
+  navbar.style.transition="1s all";
 });
 
 music.addEventListener('click', () => {
@@ -465,7 +466,6 @@ no.forEach(button => button.addEventListener('click', function () {
 }));
 
 //animation when the down icon is clicked it will show grow animation 
-document.querySelector('.navbar').style.animation="slide-up ease .5s";
 
 bottomplay.style.animation="grow ease 1.5s";
 
