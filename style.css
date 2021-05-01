@@ -624,6 +624,7 @@ button{
 .grip{
   position: absolute;
   left:135px;
+    cursor:pointer;
 }
 .listcollection{
 display:none;
