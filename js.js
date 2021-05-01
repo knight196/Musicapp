@@ -163,6 +163,7 @@ img2.src=songlist[count].musicPic;
 
 bottomimg.src=songlist[count].musicPic;
 bottomsong.innerText = songlist[count].musicName;
+minisong.innerText = songlist[count].musicName;
 smalllid.style.backgroundColor = songlist[count].background;
 
 
@@ -177,6 +178,7 @@ audiolist.src = songlist[count].musicFile;
 bottomimg.src=songlist[count].musicPic;
 bottomsong.innerText = songlist[count].musicName;
 songname.innerText = songlist[count].musicName;
+  minisong.innerText = songlist[count].musicName;
 pic2.src=songlist[count].musicPic;
 img2.src=songlist[count].musicPic;
 pic2.style.animation="spin 4s linear infinite";
@@ -200,6 +202,7 @@ thirdplay.addEventListener('click', () => {
     audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
     audiolist.play();
    smalllid.style.backgroundColor = songlist[count].background;
+    minisong.innerText = songlist[count].musicName;
 smalllid.style.transition = "all 2s";
     pic2.style.animation ="spin 4s linear infinite";
     songname.style.animation = "scroll-left 15s linear infinite";
@@ -218,6 +221,7 @@ songname.innerText = songlist[count].musicName;
 pic2.src=songlist[count].musicPic;
 img2.src=songlist[count].musicPic;
 pic2.style.animation="spin 4s linear infinite";
+  minisong.innerText = songlist[count].musicName;
 songname.style.animation = "scroll-left 15s linear infinite";
 audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
 bottomimg.src=songlist[count].musicPic;
@@ -273,6 +277,7 @@ songname.innerText = songlist[count].musicName;
 pic2.src=songlist[count].musicPic;
 img2.src=songlist[count].musicPic;
 smalllid.style.backgroundColor = songlist[count].background;
+  minisong.innerText = songlist[count].musicName;
 smalllid.style.transition = "all 2s";
 pic2.style.animation="spin 4s linear infinite";
 songname.style.animation = "scroll-left 15s linear infinite";
@@ -291,6 +296,7 @@ songname.innerText = songlist[count].musicName;
 pic2.src=songlist[count].musicPic;
 img2.src=songlist[count].musicPic;
 smalllid.style.backgroundColor = songlist[count].background;
+  minisong.innerText = songlist[count].musicName;
 smalllid.style.transition = "all 2s";
   bottomsong.innerText = songlist[count].musicName;
   bottomimg.src=songlist[count].musicPic;
