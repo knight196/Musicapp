@@ -631,6 +631,7 @@ width:100%;
   display:flex;
   justify-content: space-between;
 align-items: center;
+     animation: 1s ease 0s normal forwards 1 fadein;
 }
 .listshow{
   display:block;
@@ -694,4 +695,8 @@ font-size: 15px;
   font-weight: 600;
   font-family:"Font Awesome 5 Free ";
 }
-
+@keyframes fadein{
+  0% { opacity:0; }
+  80% { opacity:0; }
+  100% { opacity:1; }
+}
