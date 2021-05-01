@@ -284,6 +284,7 @@ smalllid.style.transition = "all 2s";
 pic2.style.animation="spin 4s linear infinite";
 songname.style.animation = "scroll-left 15s linear infinite";
 audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
+  thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
 audiolist.play();
 });
 
