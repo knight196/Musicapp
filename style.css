@@ -361,9 +361,11 @@ progress::-webkit-progress-value {
   background:rgb(74, 75, 76);
   color:white;
   bottom:0;
+    height:0;
+    opacity:0;
  border-radius: 0 0 20px 20px;
   overflow-y: hidden;
-display:none;
+pointer-events:none;
 }
 .playlist{
   display:flex;
@@ -373,7 +375,8 @@ display:none;
 }
 
 .navbar.show{
-  display:block; 
+  opacity:1;
+    pointer-events:auto;
   height:60%;
 }
 
