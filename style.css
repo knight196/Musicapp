@@ -766,3 +766,9 @@ font-size: 15px;
   80% { opacity:0; }
   100% { opacity:1; }
 }
+
+@media screen and (max-width:500px){
+  .scrollfit button{
+    display:none;
+  }
+}
