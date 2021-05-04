@@ -622,7 +622,7 @@ scrollbar-width: none;  /* Firefox */
   display:flex;
   flex-direction: column;
   text-align: center;
-  font-size: 8px;
+  font-size: 7px;
   font-weight: 600;
   padding:0 5px;
 }
