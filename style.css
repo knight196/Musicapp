@@ -545,19 +545,6 @@ width:100px;
   top: 50px;
   text-align: center;
    font-size: 10px;
-   overflow-y: scroll;
-   height:300px;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.secondlid::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.secondlid {
--ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
 }
 
 .secondlid img{
