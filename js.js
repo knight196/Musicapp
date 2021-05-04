@@ -568,3 +568,38 @@ function grip(){
   document.querySelector('.minisong').style.transition ="1s all";
   document.querySelector('.backgroundimg').style.transition ="1s all";
 }
+
+function scrollright(){
+  document.querySelector('.scrollcontainer').scrollLeft +=20;
+}
+
+function scrollleft(){
+  document.querySelector('.scrollcontainer').scrollLeft -=20;
+}
+
+
+let musicList3 = document.querySelector('.scrolllist2').children;   
+let li3 = document.querySelectorAll('p');
+
+for (let i = 0; i < musicList3.length; i++) {
+
+    musicList3[i].textContent = songlist[i].title;
+    musicList3[i].setAttribute('id',i);
+
+   const img2 = document.createElement('IMG');
+   img2.src=songlist[i].images;
+   musicList3[i].appendChild(img2);
+   img2.classList = "musicimg";
+
+    musicList3[i].addEventListener('click', function(){
+        loadSong(songlist[this.id]);
+        pic2.style.animation ="spin 4s linear infinite";
+       audioplayer.innerHTML = '<i class="fas fa-pause"></i>';
+       songname.style.animation = "scroll-left 15s linear infinite";
+       thirdplay.innerHTML = '<i class="fas fa-pause"></i>';
+      smalllid.style.backgroundColor = songlist.background;
+       audiolist.play();
+    })
+    
+}
+
