@@ -586,7 +586,19 @@ margin-bottom:50px;
   border:none;
   background:black;
   color:white;
-  padding:10px 5px;
+  padding:5px 10px;
+  position: relative;
+  z-index:1;
+  top:5px;
+  border-radius: 50px;
+}
+.scrollleft{
+  position: absolute;
+  left:10px;
+}
+.scrollright{
+  position: absolute;
+  right:10px;
 }
 .scrollcontainer{
   overflow-x: scroll;
@@ -768,6 +780,11 @@ font-size: 15px;
 }
 
 @media screen and (max-width:500px){
+  .scrollfit button{
+    display:none;
+  }
+}
+@media screen and (min-width:768px) and (max-width:800px){
   .scrollfit button{
     display:none;
   }
