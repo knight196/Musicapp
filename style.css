@@ -210,13 +210,17 @@ padding: 10px;
     position: relative;
     left: 65px;
     border:none;
+     box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
 }
 .btn2{
   border:none;
+  border-radius: 50px;
+  padding:10px;
   background:transparent;
 }
 .audioplay{
-    background:rgb(105, 103, 103);
+    background:darkcyan;
     border-radius: 50px;
     padding: 20px;
 }
