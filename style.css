@@ -793,3 +793,60 @@ font-size: 15px;
     display:none;
   }
 }
+
+
+.loader {
+  border-radius: 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:30px;
+  height:30px;
+  position: relative;
+  top:42%;
+  left:42%;
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.loading{
+  position: absolute;
+  z-index:1;
+  height:540px;
+  margin:5px auto;
+  width:290px;
+  left:0;
+  right:0;
+  border-radius: 20px;
+  background:grey;
+  display:none;
+  }
+  .fa-music{
+    position: relative;
+  }
+
+  @keyframes stretch {
+    0% {
+        transform: scale(.5);
+        background-color: darkcyan;
+        border-radius: 100%;
+    }
+
+    50% {
+        background-color: lightblue;
+    }
+
+    100% {
+        transform: scale(2.0);
+        background-color: lightgreen;
+    }
+}
+
+.bottommenu2{
+  position: absolute;
+  left:5px;
+}
