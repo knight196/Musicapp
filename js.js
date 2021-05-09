@@ -397,12 +397,19 @@ document.querySelector('.smalllid').style.display ="block";
 
 var musicicon = document.querySelector('.fa-music');
 
-musicicon.addEventListener('click', () => {
-document.querySelector('.smalllid').style.display="block";
-  document.querySelector('.smalllid').style.animation ="grow 1s ease";
-document.querySelector('.topicon').style.display="none";
+musicicon.addEventListener('click', ()=> {
+  document.querySelector('.loading').style.display="block";
+  document.querySelector('.loading').style.animation ="grow 1s ease";
+  document.querySelector('#myDiv').style.display="none";
+  setTimeout(myFunc, 3000);
 });
 
+function myFunc(){
+  document.querySelector('.loading').style.display="none";
+  document.querySelector('#myDiv').style.display="block";
+  document.querySelector('#myDiv').style.animation ="grow 1s ease";
+document.querySelector('.topicon').style.display="none";
+}
 var home = document.querySelectorAll('#home');
 
 home.forEach(button => button.addEventListener('click', () => {
