@@ -354,7 +354,7 @@ volumeslider.addEventListener('change', function(e) {;
 audiolist.volume = e.currentTarget.value / 100;
 });
 
-//stop button for to stop the music
+//stop button to stop the music
 stop.addEventListener('click', () => {
   audiolist.pause();
   audiolist.currentTime =0;
